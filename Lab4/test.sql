@@ -4,7 +4,7 @@ FROM OPENROWSET( BULK 'https://staclab4.dfs.core.windows.net/raw/*.parquet',
                 AS rows;
 
 df = spark.read.parquet(
-        "abfss://raw@staclab4.dfs.core.windows.net/raw/all/order_events.parquet"
+        "abfss://raw@staclab4.dfs.core.windows.net/all/order_events.parquet"
         )
 df.printSchema() 
 df.show(5)
@@ -51,3 +51,29 @@ df = spark.read.parquet(
 
 df.printSchema() 
 df.show(5)
+
+
+from pyspark.sql.types import StructType, StructField, StringType
+
+# Define schema only for the columns you need
+schema = StructType([
+    StructField("event_id", StringType(), True),
+    StructField("order_id", StringType(), True),
+    StructField("event_type", StringType(), True)
+])
+
+# Read Parquet with this schema
+df = spark.read \
+    .schema(schema) \
+    .parquet("abfss://raw@staclab4.dfs.core.windows.net/all/order_events.parquet")
+
+df.show(5)
+df.printSchema()
+
+# Write to the refined container
+df_transformed.write.mode("overwrite").parquet(
+    "abfss://refined@staclab4.dfs.core.windows.net/"
+)
+
+
+
