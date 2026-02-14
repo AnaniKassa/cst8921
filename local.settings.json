@@ -3,6 +3,6 @@
   "Values": {
     "AzureWebJobsStorage": "",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
-    "cosdblab3_DOCUMENTDB": "AccountEndpoint=https://cosdblab3.documents.azure.com:443/;AccountKey=Tp4klPZ4E8JwmYYLLf5V9v46LGMU0d2X5Zlk00C41ESqPLWBDEnrwQ24kpEPKXjb1mcwWAEK0JZCACDbF6V98w==;"
+    "cosdblab3_DOCUMENTDB": "AccountEndpoint="
   }
 }
