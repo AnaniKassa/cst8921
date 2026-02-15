@@ -1,0 +1,6 @@
+C:\Users\kassa\GIT_AC_Level2\cst8921\Lab3\obj\Release\net6.0\Lab3.csproj.AssemblyReference.cache
+C:\Users\kassa\GIT_AC_Level2\cst8921\Lab3\obj\Release\net6.0\Lab3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kassa\GIT_AC_Level2\cst8921\Lab3\obj\Release\net6.0\Lab3.AssemblyInfoInputs.cache
+C:\Users\kassa\GIT_AC_Level2\cst8921\Lab3\obj\Release\net6.0\Lab3.AssemblyInfo.cs
+C:\Users\kassa\GIT_AC_Level2\cst8921\Lab3\obj\Release\net6.0\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\kassa\GIT_AC_Level2\cst8921\Lab3\obj\Release\net6.0\Lab3.sourcelink.json
